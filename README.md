@@ -19,7 +19,7 @@ forward:
 
 
 
-backward,use approxsign ([bireal-net's way](https://openaccess.thecvf.com/content_ECCV_2018/papers/zechun_liu_Bi-Real_Net_Enhancing_ECCV_2018_paper.pdf))
+backward,use approxsign ([bireal-net's method](https://openaccess.thecvf.com/content_ECCV_2018/papers/zechun_liu_Bi-Real_Net_Enhancing_ECCV_2018_paper.pdf))
 
 
 <img src="https://latex.codecogs.com/svg.image?F(\mathrm{X})=\left\{\begin{array}{cc}-1&space;&&space;\text&space;{&space;if&space;}&space;\mathrm{x}<-1&space;\\2&space;x&plus;\mathrm{x}^{2}&space;&&space;\text&space;{&space;if&space;}-1&space;\leqslant&space;\mathrm{x}<0&space;\\2&space;x-\mathrm{x}^{2}&space;&&space;\text&space;{&space;if&space;}&space;0&space;\leqslant&space;\mathrm{x}<1&space;\\1&space;&&space;\text&space;{&space;otherwise&space;}\end{array},&space;\frac{\partial&space;F\left(a_{r}\right)}{\partial&space;a_{r}}=\left\{\begin{array}{cc}2&plus;2&space;x&space;&&space;\text&space;{&space;if&space;}-1&space;\leqslant&space;\mathrm{x}<0&space;\\2-2&space;\mathrm{x}&space;&&space;\text&space;{&space;if&space;}&space;0&space;\leqslant&space;\mathrm{x}<1&space;\\0&space;&&space;\text&space;{&space;otherwise&space;}\end{array}\right.\right." title="F(\mathrm{X})=\left\{\begin{array}{cc}-1 & \text { if } \mathrm{x}<-1 \\2 x+\mathrm{x}^{2} & \text { if }-1 \leqslant \mathrm{x}<0 \\2 x-\mathrm{x}^{2} & \text { if } 0 \leqslant \mathrm{x}<1 \\1 & \text { otherwise }\end{array}, \frac{\partial F\left(a_{r}\right)}{\partial a_{r}}=\left\{\begin{array}{cc}2+2 x & \text { if }-1 \leqslant \mathrm{x}<0 \\2-2 \mathrm{x} & \text { if } 0 \leqslant \mathrm{x}<1 \\0 & \text { otherwise }\end{array}\right.\right." />

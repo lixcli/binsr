@@ -11,7 +11,7 @@ if you want to try different binary function, you need to :
 # performance
 an example binary function:
 `bianrize/WApproxASTE.py`:
-# weight binarization
+# activation binarization
 
 forward:
 
@@ -24,7 +24,7 @@ backward,use approxsign ([bireal-net's method](https://openaccess.thecvf.com/con
 
 <img src="https://latex.codecogs.com/svg.image?F(\mathrm{X})=\left\{\begin{array}{cc}-1&space;&&space;\text&space;{&space;if&space;}&space;\mathrm{x}<-1&space;\\2&space;x&plus;\mathrm{x}^{2}&space;&&space;\text&space;{&space;if&space;}-1&space;\leqslant&space;\mathrm{x}<0&space;\\2&space;x-\mathrm{x}^{2}&space;&&space;\text&space;{&space;if&space;}&space;0&space;\leqslant&space;\mathrm{x}<1&space;\\1&space;&&space;\text&space;{&space;otherwise&space;}\end{array},&space;\frac{\partial&space;F\left(a_{r}\right)}{\partial&space;a_{r}}=\left\{\begin{array}{cc}2&plus;2&space;x&space;&&space;\text&space;{&space;if&space;}-1&space;\leqslant&space;\mathrm{x}<0&space;\\2-2&space;\mathrm{x}&space;&&space;\text&space;{&space;if&space;}&space;0&space;\leqslant&space;\mathrm{x}<1&space;\\0&space;&&space;\text&space;{&space;otherwise&space;}\end{array}\right.\right." title="F(\mathrm{X})=\left\{\begin{array}{cc}-1 & \text { if } \mathrm{x}<-1 \\2 x+\mathrm{x}^{2} & \text { if }-1 \leqslant \mathrm{x}<0 \\2 x-\mathrm{x}^{2} & \text { if } 0 \leqslant \mathrm{x}<1 \\1 & \text { otherwise }\end{array}, \frac{\partial F\left(a_{r}\right)}{\partial a_{r}}=\left\{\begin{array}{cc}2+2 x & \text { if }-1 \leqslant \mathrm{x}<0 \\2-2 \mathrm{x} & \text { if } 0 \leqslant \mathrm{x}<1 \\0 & \text { otherwise }\end{array}\right.\right." />
 
-# activation binarization
+# weight binarization
 forward:
 
 <img src="https://latex.codecogs.com/svg.image?\operatorname{sign}(x)=&space;\begin{cases}-1&space;&&space;\text&space;{&space;if&space;}&space;x<0&space;\\&space;&plus;1&space;&&space;\text&space;{&space;otherwise&space;}\end{cases}" title="\operatorname{sign}(x)= \begin{cases}-1 & \text { if } x<0 \\ +1 & \text { otherwise }\end{cases}" />

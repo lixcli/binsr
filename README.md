@@ -9,7 +9,7 @@ if you want to try different binary function, you need to :
 
 
 # performance
-a example binary function:
+an example binary function:
 `bianrize/WApproxASTE.py`:
 # weight binarizing
 

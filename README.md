@@ -3,7 +3,7 @@
 a simple binary neural network for SISR(base on EDSR official [code](https://github.com/sanghyun-son/EDSR-PyTorch))
 
 if you want to try different binary function, you need to :
-1. add new script to model/binarize and model/__init__.py to choose your binary function.
+1. add new script to model/binarize and modify model/__init__.py to choose your binary function.
 2. edit [run.sh](./run.sh)(view this script for more detail), choose one function you want to run.
 3. run `sh run.sh`
 

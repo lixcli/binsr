@@ -37,7 +37,7 @@ backward,STE
 
 # network modify
 
-add an Tanh() function before binact. It helps to transfer a nonlinear gradient after STE.
+**add an Tanh() function before binact**. It helps to transfer a nonlinear gradient after STE.
 
 
 ## srresnet
@@ -48,7 +48,17 @@ add an Tanh() function before binact. It helps to transfer a nonlinear gradient 
 |srresnetx2 |32/32|37.889/0.958|33.4/0.915|32.077/0.896|31.602/0.922|
 |Oursx2|1/1|36.345/0.934| 32.221/0.876|31.364/0.877|29.407/0.883|
 |FPx4|32/32|32.066/0.890|28.497/0.778|27.516/0.731|25.858/0.778|
-|srresnetx4|1/1|31.232/0.848|28.047/0.729|27.215/0.699|25.075/ 0.727|
+|Oursx4|1/1|31.232/0.848|28.047/0.729|27.215/0.699|25.075/ 0.727|
+
+compare to [Efficient Super Resolution Using Binarized Neural Network](http://openaccess.thecvf.com/content_CVPRW_2019/papers/CEFRL/Ma_Efficient_Super_Resolution_Using_Binarized_Neural_Network_CVPRW_2019_paper.pdf)(Ma et.al.)
+
+|Method|Bit|Set5|Set14|Urban100|
+|:----|:----|:----|:----|:----|
+| |W/A|PSNR|PSNR|PSNR|PSNR|
+|Ma et.al. x2|1/1|35.66|31.56|28.76|
+|Oursx2|1/1|36.345| 32.221|29.407|
+|Ma et.al. x4|1/1|30.34|27.16|24.48|
+|Oursx4|1/1|31.232|28.047|25.075|
 
 ## edsr
 

@@ -1,5 +1,5 @@
 from option import args
 if args.binarize == 'approxsign':
     from .approxsign import *
-elif args.binarize == 'WapproxAste':
+elif args.binarize == 'ste':
     from .WapproxAste import *

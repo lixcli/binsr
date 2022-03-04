@@ -67,7 +67,7 @@ python3 main_noskt.py --scale 4 --model srresnet \
 --save "../binsr_experiment/srresnet/bin_noskt_x4/1bit" --dir_data $DATA_DIR 
 }
 
-srrx4_noskt_eval
+# srrx4_noskt_eval
 
 # edsrx4_noskt_eval
 ########### noskt ################
@@ -81,7 +81,8 @@ python main_noskt.py --scale 4 \
 --reset \
 --epochs 300 \
 --decay 60 \
---save "edsr/$1_noskt_x4/1bit" --dir_data $DATA_DIR --print_every 10
+--binarize $2 \
+--save "edsr/$1_$2_noskt_x4/1bit" --dir_data $DATA_DIR --print_every 10
 }
 
 bin_edsr_noskt_x2() {
@@ -93,7 +94,8 @@ python main_noskt.py --scale 2 \
 --epochs 300 \
 --decay 60 \
 --reset \
---save "edsr/$1_noskt_x2/1bit" --dir_data $DATA_DIR --print_every 10
+--binarize $2 \
+--save "edsr/$1_$2_noskt_x2/1bit" --dir_data $DATA_DIR --print_every 10
 }
 
 bin_srresnet_noskt_x2() {
@@ -105,7 +107,8 @@ python main_noskt.py --scale 2 \
 --epochs 300 \
 --decay 60 \
 --reset \
---save "srresnet/$1_noskt_x2/1bit" --dir_data $DATA_DIR --print_every 10
+--binarize $2 \
+--save "srresnet/$1_$2_noskt_x2/1bit" --dir_data $DATA_DIR --print_every 10
 }
 
 bin_srresnet_noskt_x4() {
@@ -117,7 +120,8 @@ python main_noskt.py --scale 4 \
 --epochs 300 \
 --decay 60 \
 --reset \
---save "srresnet/$1_noskt_x4/1bit" --dir_data $DATA_DIR --print_every 10
+--binarize $2 \
+--save "srresnet/$1_$2_noskt_x4/1bit" --dir_data $DATA_DIR --print_every 10
 }
 # CUDA_VISIBLE_DEVICES=2 bin_edsr_noskt_x4 bin
 # CUDA_VISIBLE_DEVICES=2 bin_edsr_noskt_x2 bin
@@ -152,5 +156,8 @@ python main_ori.py --model SRResnet --scale 4 \
 # CUDA_VISIBLE_DEVICES=1 bin_srresnet_noskt_x2 bin
 # CUDA_VISIBLE_DEVICES=1 bin_srresnet_noskt_x4 bin
 
-# CUDA_VISIBLE_DEVICES=0 bin_edsr_noskt_x2 bin
-# CUDA_VISIBLE_DEVICES=0 bin_edsr_noskt_x4 bin
+# CUDA_VISIBLE_DEVICES=0 2 bin
+# CUDA_VISIBLE_DEVICES=0 bin_edsr_noskt_x4 bin ste
+# CUDA_VISIBLE_DEVICES=1 bin_edsr_noskt_x2 bin ste
+# CUDA_VISIBLE_DEVICES=2 bin_srresnet_noskt_x2 bin ste
+# CUDA_VISIBLE_DEVICES=3 bin_srresnet_noskt_x4 bin ste

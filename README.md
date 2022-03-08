@@ -32,7 +32,7 @@ forward:
 backward,STE
 
 
-<img src="https://latex.codecogs.com/svg.image?\frac{\partial&space;\operatorname{clip}(-1,&space;x,&space;1)}{\partial&space;X}=\left\{\begin{array}{c}1,-1<x<1&space;\\0,&space;\text&space;{&space;otherwise&space;}\end{array}\right." title="\frac{\partial \operatorname{clip}(-1, x, 1)}{\partial X}=\left\{\begin{array}{c}1,-1<x<1 \\0, \text { otherwise }\end{array}\right." />
+<img src="https://latex.codecogs.com/svg.image?\frac{\partial&space;X_b}{\partial&space;X}=1" title="\frac{\partial \operatorname{clip}(-1, x, 1)}{\partial X}=\left\{\begin{array}{c}1,-1<x<1 \\0, \text { otherwise }\end{array}\right." />
 
 
 

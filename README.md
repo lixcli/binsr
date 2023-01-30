@@ -49,8 +49,10 @@ backward,STE
 | |W/A|PSNR/SSIM|PSNR/SSIM|PSNR/SSIM|PSNR/SSIM|
 |srresnetx2 |32/32|37.889/0.958|33.4/0.915|32.077/0.896|31.602/0.922|
 |Oursx2|1/1|36.345/0.934| 32.221/0.876|31.364/0.877|29.407/0.883|
+|Oursx2(DBSR)|1/1|37.502|33.085|31.82|30.881|
 |FPx4|32/32|32.066/0.890|28.497/0.778|27.516/0.731|25.858/0.778|
 |Oursx4|1/1|31.232/0.848|28.047/0.729|27.215/0.699|25.075/ 0.727|
+|Oursx4(DBSR)|1/1|31.666|28.282|27.333|25.419|
 
 compare to [Efficient Super Resolution Using Binarized Neural Network](http://openaccess.thecvf.com/content_CVPRW_2019/papers/CEFRL/Ma_Efficient_Super_Resolution_Using_Binarized_Neural_Network_CVPRW_2019_paper.pdf)(Ma et.al.)
 
